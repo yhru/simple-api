@@ -1,0 +1,29 @@
+{
+  "user1": {
+    "id":1,
+    "firstname":"Armand",
+    "lastname":"Gentot",
+    "email":"armand.gentot@gmail.com"
+  },
+
+  "user2":  {
+    "id":2,
+    "firstname":"Maxim",
+    "lastname":"Joseau",
+    "email":"maxim.joseau@gmail.com"
+  },
+
+  "user3":  {
+    "id":3,
+    "firstname":"Romuald",
+    "lastname":"Henry",
+    "email":"romuald.henry@gmail.com"
+  },
+
+  "user4": {
+    "id":4,
+    "firstname":"Louis",
+    "lastname":"Plancq",
+    "email":"louis.plancq@gmail.com"
+  }
+}
