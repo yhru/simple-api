@@ -6,7 +6,8 @@
     "@cucumber/cucumber": "^7.3.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "cucumber-js"
   },
   "name": "simple-api",
   "version": "1.0.0",
