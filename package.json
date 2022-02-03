@@ -4,11 +4,12 @@
     "express": "^4.17.2"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.3.2"
+    "@cucumber/cucumber": "^7.3.2",
+    "cucumber-html-reporter": "^5.5.0"
   },
   "scripts": {
     "start": "node server.js",
-    "test": "cucumber-js"
+    "test": "cucumber-js -f json:test/report/cucumber_report.json"
   },
   "name": "simple-api",
   "version": "1.0.0",

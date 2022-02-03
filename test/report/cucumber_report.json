@@ -1,0 +1,531 @@
+[
+  {
+    "description": "    Should be able to submit GET requests to the API.",
+    "elements": [
+      {
+        "description": "",
+        "id": "testing-api;get-users",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Get Users",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send GET request to /getUsers",
+            "match": {
+              "location": "features/step_definitions/users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I get response code 200",
+            "match": {
+              "location": "features/step_definitions/users.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The user with 1 exist",
+            "match": {
+              "location": "features/step_definitions/users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features/step_definitions/users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 1,\n    \"firstname\": \"Armand\",\n    \"lastname\": \"Gentot\",\n    \"email\": \"armand.gentot@gmail.com\"\n}",
+                "line": 12
+              }
+            ],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I receive",
+            "match": {
+              "location": "features/step_definitions/users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The user with 2 exist",
+            "match": {
+              "location": "features/step_definitions/users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features/step_definitions/users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 2,\n    \"firstname\": \"Maxim\",\n    \"lastname\": \"Joseau\",\n    \"email\": \"maxim.joseau@gmail.com\"\n}",
+                "line": 12
+              }
+            ],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I receive",
+            "match": {
+              "location": "features/step_definitions/users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The user with 3 exist",
+            "match": {
+              "location": "features/step_definitions/users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features/step_definitions/users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 3,\n    \"firstname\": \"Romuald\",\n    \"lastname\": \"Henry\",\n    \"email\": \"romuald.henry@gmail.com\"\n}",
+                "line": 12
+              }
+            ],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I receive",
+            "match": {
+              "location": "features/step_definitions/users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 8,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "The user with 4 exist",
+            "match": {
+              "location": "features/step_definitions/users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features/step_definitions/users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 4,\n    \"firstname\": \"Louis\",\n    \"lastname\": \"Plancq\",\n    \"email\": \"louis.plancq@gmail.com\"\n}",
+                "line": 12
+              }
+            ],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I receive",
+            "match": {
+              "location": "features/step_definitions/users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "testing-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Testing API",
+    "tags": [],
+    "uri": "features/api.feature"
+  },
+  {
+    "description": "  Check if this is the good user",
+    "elements": [
+      {
+        "description": "",
+        "id": "is-it-armand?;user-is-or-is-not-armand",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "User is or is not Armand",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is \"Armand\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I ask whether it's Armand",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be told \"Yes\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "is-it-armand?;user-is-or-is-not-armand",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "User is or is not Armand",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is \"Maxim\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I ask whether it's Armand",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be told \"No\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "is-it-armand?;user-is-or-is-not-armand",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "User is or is not Armand",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is \"Romuald\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I ask whether it's Armand",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be told \"No\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "is-it-armand?;user-is-or-is-not-armand",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "User is or is not Armand",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is \"Louis\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I ask whether it's Armand",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be told \"No\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "is-it-armand?;user-is-or-is-not-armand",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "User is or is not Armand",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is \"anything else!\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I ask whether it's Armand",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be told \"No\"",
+            "match": {
+              "location": "features/step_definitions/stepdefs.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "is-it-armand?",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Is it Armand?",
+    "tags": [],
+    "uri": "features/is_it_armand.feature"
+  }
+]
