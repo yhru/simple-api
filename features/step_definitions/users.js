@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const assert = require('assert').strict
+const assert = require('assert');
 const axios = require('axios');
 
 function getData(url) {
@@ -15,7 +15,7 @@ Given('The user with {int} exist', async function (id) {
 })
 
 When('I send GET request to {}', async function (path) {
-    const url = `http://127.0.0.1:8080${path}/$this.id`
+    const url = `http://127.0.0.1:8080${path}/${this.id}`
     const response = await getData(url);
     this.response = response;
 })
