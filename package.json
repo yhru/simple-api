@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "cucumber-js -f json:test/report/cucumber_report.json"
+    "test": "cucumber-js -f json:test/report/cucumber_report.json",
+    "test:dev": "cucumber-js -f json:test/report/cucumber_report_dev.json --tags @dev"
   },
   "name": "simple-api",
   "version": "1.0.0",

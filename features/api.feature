@@ -1,3 +1,4 @@
+@dev
 Feature: Testing API
     Should be able to submit GET requests to the API.
 

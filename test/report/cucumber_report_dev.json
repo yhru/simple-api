@@ -1,0 +1,300 @@
+[
+  {
+    "description": "    Should be able to submit GET requests to the API.",
+    "elements": [
+      {
+        "description": "",
+        "id": "testing-api;get-users",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Get Users",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send GET request to /getUsers",
+            "match": {
+              "location": "features\\step_definitions\\users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I get response code 200",
+            "match": {
+              "location": "features\\step_definitions\\users.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The user with 1 exist",
+            "match": {
+              "location": "features\\step_definitions\\users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features\\step_definitions\\users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 1,\n    \"firstname\": \"Armand\",\n    \"lastname\": \"Gentot\",\n    \"email\": \"armand.gentot@gmail.com\"\n}",
+                "line": 13
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I receive",
+            "match": {
+              "location": "features\\step_definitions\\users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The user with 2 exist",
+            "match": {
+              "location": "features\\step_definitions\\users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features\\step_definitions\\users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 2,\n    \"firstname\": \"Maxim\",\n    \"lastname\": \"Joseau\",\n    \"email\": \"maxim.joseau@gmail.com\"\n}",
+                "line": 13
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I receive",
+            "match": {
+              "location": "features\\step_definitions\\users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The user with 3 exist",
+            "match": {
+              "location": "features\\step_definitions\\users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features\\step_definitions\\users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 3,\n    \"firstname\": \"Romuald\",\n    \"lastname\": \"Henry\",\n    \"email\": \"romuald.henry@gmail.com\"\n}",
+                "line": 13
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I receive",
+            "match": {
+              "location": "features\\step_definitions\\users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "testing-api;get-user",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "get user",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "The user with 4 exist",
+            "match": {
+              "location": "features\\step_definitions\\users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I send GET request to /user",
+            "match": {
+              "location": "features\\step_definitions\\users.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"id\": 4,\n    \"firstname\": \"Louis\",\n    \"lastname\": \"Plancq\",\n    \"email\": \"louis.plancq@gmail.com\"\n}",
+                "line": 13
+              }
+            ],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I receive",
+            "match": {
+              "location": "features\\step_definitions\\users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dev",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "testing-api",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Testing API",
+    "tags": [
+      {
+        "name": "@dev",
+        "line": 1
+      }
+    ],
+    "uri": "features\\api.feature"
+  }
+]
