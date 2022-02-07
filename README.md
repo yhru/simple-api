@@ -19,7 +19,7 @@ Simple API ayant pour but de présenter et d'initier a l'utilisation de Cucumber
 
 ## Authors
 
-- [@Armand Gentot](https://github.com/yhru)
-- [@Romuald Henry](https://github.com/Armaaand)
-- [@Maxim Joseau](https://github.com/louisplancq)
-- [@Louis Plancq](https://github.com/JellalEternal)
+- [@Armand Gentot](https://github.com/Armaaand)
+- [@Romuald Henry](https://github.com/JellalEternal)
+- [@Maxim Joseau](https://github.com/yhru)
+- [@Louis Plancq](https://github.com/louisplancq)
